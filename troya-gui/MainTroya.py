@@ -2,7 +2,7 @@ import sys
 from PyQt5 import QtWidgets
 from UIClass import Ui_MainWindow, Ui_Dialog
 import Terminal_Connector
-import funcLogTrace,funcPrintTsoBrowse,funcPrintTsoListing,funcPrintTroyaM
+import funcLogTrace, funcPrintTsoBrowse, funcPrintTsoListing, funcPrintTroyaM, funcPrintTsoTordump
 
 global terminal
 
@@ -87,6 +87,8 @@ class MainUi(QtWidgets.QMainWindow, Ui_MainWindow):
             funcPrintTsoListing.main(terminal)
         elif text == "PrintTroya_M":
             funcPrintTroyaM.main(terminal)
+        elif text == "PrintTSO_Tordump":
+            funcPrintTsoTordump.main(terminal)
 
 
 if __name__ == "__main__":

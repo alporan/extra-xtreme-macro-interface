@@ -4,13 +4,13 @@ import time
 def main(t):
     ts = time.gmtime()
     print(time.strftime("%Y-%m-%d %H.%M.%S", ts))
-    txt_name = "Q:\\Users\\a_oran\Desktop\\TSO Listing - " + time.strftime("%Y-%m-%d %H.%M.%S", ts) + ".txt"
+    txt_name = "Q:\\Users\\a_oran\Desktop\\TSO TorDump - " + time.strftime("%Y-%m-%d %H.%M.%S", ts) + ".txt"
     dot_line = ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
-    end_msg = "    Relocation Dictionary   "
-    skip_column = 39
+    end_msg = "LINE 1,188"
+    skip_column = 27
     f = open(txt_name, "w+")
 ########################################################################
-# LEFT SIDE                                                          #
+# LEFT COLUMN                                                          #
 ########################################################################
     index_x = -1
     matrix = []
@@ -36,7 +36,7 @@ def main(t):
                 for j in range(0, len(screen_lines[i])):
                     matrix[index_x].append(screen_lines[i][j])
 ########################################################################
-#  RIGHT SIDE                                                        #
+#  RIGHT COLUMN                                                        #
 ########################################################################
     index_x = -1
     t.tso_entry("TOP")

@@ -148,6 +148,6 @@ class Ui_MainWindow(object):
         self.pushButton2.setText(_translate("MainWindow", "ABORT"))
         self.menuMENU.setTitle(_translate("MainWindow", "MENU"))
         self.actionexit.setText(_translate("MainWindow", "exit"))
-        function_list = ["LogTrace", "PrintTSO_Browse", "PrintTSO_Listing", "PrintTroya_M"]
+        function_list = ["LogTrace", "PrintTSO_Browse", "PrintTSO_Listing", "PrintTroya_M", "PrintTSO_Tordump"]
         for i in range(0,len(function_list)):
             self.comboBox1.addItem(_translate("MainWindow", function_list[i]))
