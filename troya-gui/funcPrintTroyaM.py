@@ -16,6 +16,6 @@ def main(t):
         screen_output = t.troya_entry2("MDR")
         screen_lines = screen_output.split('\n')
         for i in range(0, len(screen_lines)-1):
-                if not screen_lines[i].isspace():
-                    f.write(screen_lines[i])
-                    f.write("\n")
+            if not screen_lines[i].isspace():
+                f.write(screen_lines[i])
+                f.write("\n")

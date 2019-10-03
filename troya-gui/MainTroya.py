@@ -2,7 +2,7 @@ import sys
 from PyQt5 import QtWidgets
 from UIClass import Ui_MainWindow, Ui_Dialog
 import Terminal_Connector
-import funcLogTrace, funcPrintTsoBrowse, funcPrintTsoListing, funcPrintTroyaM, funcPrintTsoTordump
+import funcLogTrace, funcPrintTsoBrowse, funcPrintTsoListing, funcPrintTroyaM, funcPrintTsoTordump, funcDelAURF, funcFindDurf, funcTest
 
 global terminal
 
@@ -79,7 +79,7 @@ class MainUi(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def execute_macro(self):
         text = self.comboBox1.currentText()
-        if text == "funcLogTrace":
+        if text == "Trace Log":
             funcLogTrace.main(terminal)
         elif text == "PrintTSO_Browse":
             funcPrintTsoBrowse.main(terminal)
@@ -89,6 +89,12 @@ class MainUi(QtWidgets.QMainWindow, Ui_MainWindow):
             funcPrintTroyaM.main(terminal)
         elif text == "PrintTSO_Tordump":
             funcPrintTsoTordump.main(terminal)
+        elif text == "Delete DURF":
+            funcDelAURF.main(terminal, mainGui)
+        elif text == "Delete Empty AURF":
+            funcFindDurf.main(terminal, mainGui)
+        elif text == "TEST":
+            funcTest.main(terminal)
 
 
 if __name__ == "__main__":

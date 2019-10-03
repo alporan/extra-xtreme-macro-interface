@@ -59,6 +59,6 @@ def main(t):
 #  PRINT TO FILE                                                       #
 ########################################################################
     for i in range(0, len(matrix)):
-            for j in range(0, len(matrix[i])):
-                f.write(matrix[i][j])
-            f.write("\n")
+        for j in range(0, len(matrix[i])):
+            f.write(matrix[i][j])
+        f.write("\n")

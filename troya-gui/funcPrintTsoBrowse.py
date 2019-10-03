@@ -15,12 +15,15 @@ def main(t):
     else:
         skip_line = 4
     for i in range(skip_line, len(screen_lines)):
-        f.write(screen_lines[i])
-        f.write("\n")
+        if dot_line not in screen_lines[i]:
+            if not screen_lines[i].isspace():
+                f.write(screen_lines[i])
+                f.write("\n")
     while end_msg not in screen_output:
         screen_output = t.tso_entry("DOWN 27")
         screen_lines = screen_output.split('\n')
         for i in range(skip_line, len(screen_lines)):
             if dot_line not in screen_lines[i]:
-                f.write(screen_lines[i])
-                f.write("\n")
+                if not screen_lines[i].isspace():
+                    f.write(screen_lines[i])
+                    f.write("\n")
