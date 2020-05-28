@@ -1,4 +1,6 @@
-# TroyaGUI
+# Attachmate Extra! X-treme Macro Interface
+Interface for developing utility programs and macros with Python programing language for Extra! X-treme terminals.
+
 
 ## Development setup
 Python packages
@@ -9,7 +11,7 @@ pywin32
 ```
 
 Attachmate Extra! X-treme OLE Automation (COM) API - http://docs.attachmate.com/extra/x-treme/apis/com/
-
 PyQt5 Reference Guide - http://pyqt.sourceforge.net/Docs/PyQt5/
 
-![](troya-gui.gif)
+## Demo
+![](troya-gui.gif=400x400)
