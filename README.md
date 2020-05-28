@@ -14,4 +14,4 @@ Attachmate Extra! X-treme OLE Automation (COM) API - http://docs.attachmate.com/
 PyQt5 Reference Guide - http://pyqt.sourceforge.net/Docs/PyQt5/
 
 ## Demo
-<img src="troya-gui.gif" width="700" height="700"/>
+<img src="demo.gif" width="700" height="700"/>
